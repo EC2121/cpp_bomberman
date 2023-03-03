@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{c624878c-1d60-42b6-953c-8e4756ca3a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{4f1ff48d-a0e5-4dec-82fd-719fc47abfc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{6dfd0448-1463-4b35-a4c5-aa99424b9417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Animations">
+      <UniqueIdentifier>{5f35518d-2997-4729-b924-a1b9dc363286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Actors">
+      <UniqueIdentifier>{0a2dc836-a8c1-4833-a1ca-3f2df6c87256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FSM">
+      <UniqueIdentifier>{109cd79a-90fa-44ef-a13d-6b75cf4dfb37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FSM\Player">
+      <UniqueIdentifier>{e62e47d9-0f81-485c-8f07-9deddd81436e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{dfa261d9-302d-4199-8e86-03445daa3544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GarbageCollector">
+      <UniqueIdentifier>{17d2a124-b16f-44e6-ae62-7001fca835e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Actors">
+      <UniqueIdentifier>{bb24d218-8209-4ada-a76d-6566ef95f0f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animations">
+      <UniqueIdentifier>{67a626f0-b7c1-46b0-8565-d179607c67de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{f464b764-7fb2-465b-9172-52a59b81a4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FSM">
+      <UniqueIdentifier>{0c615830-d5a8-4398-9fb7-553c6e200cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FSM\Player">
+      <UniqueIdentifier>{ae7f374b-2521-4f16-8561-1f768ae7db69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GarbageCollector">
+      <UniqueIdentifier>{f874b7eb-7073-4deb-85d0-b34bb320f463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{06fab038-831e-4d97-b525-b7ffd13d5e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{044fa251-c1dc-45b2-8ef5-f26721319067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{f2ee4f8c-6b93-429a-afc6-74014638dd8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actors\bomb.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actors\destroyable-wall.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actors\game-object.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actors\player.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Actors\wall.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Animations\animation.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Animations\IAnimatable.cpp">
+      <Filter>Source Files\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\bm-time.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\game.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FSM\Player\player_idle_state.cpp">
+      <Filter>Source Files\FSM\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FSM\Player\player_walk_state.cpp">
+      <Filter>Source Files\FSM\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FSM\Player\player-attack-state.cpp">
+      <Filter>Source Files\FSM\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FSM\IStateMachinable.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GarbageCollector\garbage-collector.cpp">
+      <Filter>Source Files\GarbageCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Graphics\screen.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Math\bm-math.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Physics\box-collider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Physics\circle-collider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Physics\collider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Physics\physics-mgr.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="a\bm-time.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Actors\bomb.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Actors\destroyable-wall.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Actors\game-object.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Actors\player.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Actors\wall.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Animations\animation.h">
+      <Filter>Header Files\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Animations\IAnimatable.h">
+      <Filter>Header Files\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Core\bm-time.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FSM\Player\player-attack-state.h">
+      <Filter>Header Files\FSM\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FSM\Player\player-FSM-include.h">
+      <Filter>Header Files\FSM\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FSM\Player\player-idle-state.h">
+      <Filter>Header Files\FSM\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FSM\Player\player-walk-state.h">
+      <Filter>Header Files\FSM\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FSM\IStateMachinable.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FSM\state.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\GarbageCollector\garbage-collector.h">
+      <Filter>Header Files\GarbageCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Graphics\screen.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Math\bm-math.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Physics\box-collider.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Physics\circle-collider.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Physics\collider.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Physics\collision-info.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Physics\physics-mgr.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
