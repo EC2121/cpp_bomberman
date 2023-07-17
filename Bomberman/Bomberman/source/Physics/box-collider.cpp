@@ -75,22 +75,6 @@ namespace Physics {
 
 	bool BoxCollider::CheckForCollisions(const CircleCollider& in_other, CollisionInfo& in_info) const
 	{
-		//TODO
-		//float test_x = in_other.position.x;
-		//float test_y = in_other.position.y;
-
-		//if (in_other.position.x < this->position.x) test_x = this->position.x;
-		//else if (in_other.position.x  > this->position.x + this->width) test_x = this->position.x + this->width;
-		//if (in_other.position.y < this->position.y) test_y = this->position.y;
-		//else if (in_other.position.y > this->position.y + this->heigth) test_y = this->position.y + this->heigth;
-
-		//float dist_x = in_other.position.x - test_x;
-		//float dist_y = in_other.position.y - test_y;
-
-		//float distance = sqrtf(powf(dist_x, 2.f) + powf(dist_y, 2.f));
-
-		//return distance <= in_other.radius;
-
 		return false;
 	}
 

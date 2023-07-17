@@ -88,12 +88,6 @@ namespace Actors {
 		InsertState(FSM::WALK, std::make_shared<FSM::PlayerWalkState>());
 		InsertState(FSM::ATTACK, std::make_shared<FSM::PlayerAttackState>());
 		ChangeCurrentState(*this, FSM::IDLE);
-		//states_map[FSM::IDLE] = std::make_shared<FSM::PlayerIdleState>();
-		//states_map[FSM::WALK] = std::make_shared<FSM::PlayerWalkState>();
-		//states_map[FSM::ATTACK] = std::make_shared<FSM::PlayerAttackState>();
-		//curr_state = states_map[FSM::IDLE];
-
-
 	}
 
 

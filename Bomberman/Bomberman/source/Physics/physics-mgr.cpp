@@ -38,7 +38,6 @@ namespace Physics {
 
 	bool PhysicsMgr::BoxOverlap(const Vector2f in_at_pos, const int in_width, const int in_height)
 	{
-		//TODO
 		Actors::GameObject temp_go = Actors::GameObject();
 		BoxCollider temp = BoxCollider(temp_go, STATIC);
 		temp.position = in_at_pos;

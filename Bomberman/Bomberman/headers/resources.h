@@ -26,4 +26,3 @@ namespace Resources {
 	
 
 }
-//static std::map<std::string, std::string> resources_paths = std::map<std::string, std::string>();
