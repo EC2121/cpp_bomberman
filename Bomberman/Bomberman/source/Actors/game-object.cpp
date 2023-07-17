@@ -7,12 +7,12 @@
 #include <iostream>
 namespace Actors {
 	GameObject::GameObject()
-		: width(0)
-		, height(0)
-		, position(Vector2f())
-		, tag(GOT_DEFAULT)
+		: tag(GOT_DEFAULT)
 		, id(Core::Game::gameobject_id++)
+		, width(0)
+		, height(0)
 		, own_collider(nullptr)
+		, position(Vector2f())
 	{
 
 	}
@@ -68,10 +68,10 @@ namespace Actors {
 
 	void GameObject::ChangeSprite(const std::shared_ptr<SDL_Texture*> in_new_texture, const int in_x, const int in_y, const int in_width, const int in_height)
 	{
-		srcrect.get()->x = in_x;
-		srcrect.get()->y = in_y;
-		srcrect.get()->w = in_width;
-		srcrect.get()->h = in_height;
+		srcrect->x = in_x;
+		srcrect->y = in_y;
+		srcrect->w = in_width;
+		srcrect->h = in_height;
 		texture = in_new_texture;
 	}
 	void GameObject::Draw()
@@ -90,11 +90,11 @@ namespace Actors {
 	}
 	void GameObject::Destroy()
 	{
-		if (own_collider.get())
+		if (own_collider)
 		{
 			own_collider->Destroy(own_collider->GetId());
 		}
-		if (texture.get())
+		if (texture)
 		{
 			SDL_DestroyTexture(*texture);
 		}

@@ -167,7 +167,6 @@
     <ClCompile Include="source\resources.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="a\bm-time.h" />
     <ClInclude Include="headers\Actors\bomb.h" />
     <ClInclude Include="headers\Actors\destroyable-wall.h" />
     <ClInclude Include="headers\Actors\game-object.h" />

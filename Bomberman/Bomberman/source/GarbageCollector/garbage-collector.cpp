@@ -20,7 +20,7 @@ namespace GC {
 	}
 	void GarbageCollector::ClearObjects()
 	{
-		if (objects_to_destroy.size() > 0)
+		if (!objects_to_destroy.empty())
 		{
 			objects_to_destroy.clear();
 		}

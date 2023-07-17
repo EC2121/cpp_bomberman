@@ -2,23 +2,24 @@
 #include "game-object.h"
 #include "SDL_image.h"
 #include <iostream>
+#include <utility>
 #include "game.h"
 namespace Animations {
 
 
 	Animation::Animation(Actors::GameObject& in_owner, std::string const& in_path, const int in_number_of_frames_per_row, const int in_number_of_frames_per_column, const float in_frame_rate_in_ms)
-		: owner(in_owner)
-		, last_frame(false)
-		, should_invoke_event_on_last_frame(false)
-		, frame_rate_in_ms(0)
-		, height(0)
-		, width(0)
-		, is_playing(false)
-		, number_of_frames_per_column(0)
-		, number_of_frames_per_row(0)
-		, ticks(0)
-		, time(0)
-		, time_of_start(0)
+		: should_invoke_event_on_last_frame(false)
+		  , owner(in_owner)
+		  , is_playing(false)
+		  , width(0)
+		  , height(0)
+		  , number_of_frames_per_row(0)
+		  , number_of_frames_per_column(0)
+		  , frame_rate_in_ms(0)
+		  , last_frame(false)
+		  , time_of_start(0)
+		  , ticks(0)
+		  , time(0)
 	{
 
 		SDL_Surface* surface = IMG_Load(in_path.c_str());
@@ -44,7 +45,7 @@ namespace Animations {
 		: Animation(in_owner, in_path, in_number_of_frames_per_row, in_number_of_frames_per_column, in_frame_rate_in_ms)
 
 	{
-		on_animation_end = in_func;
+		on_animation_end = std::move(in_func);
 		should_invoke_event_on_last_frame = in_should_invoke_event;
 	}
 
@@ -55,7 +56,10 @@ namespace Animations {
 			ticks = SDL_GetTicks() - time_of_start;
 			time = ticks / frame_rate_in_ms;
 			Uint32 x = (time % number_of_frames_per_row);
-			last_frame = (last_frame && x <= number_of_frames_per_row) ? false : last_frame;
+			if ((last_frame && x <= number_of_frames_per_row))
+				last_frame = false;
+			else
+				last_frame = last_frame;
 			owner.ChangeSprite(anim_texture, width * x, 0, width, height);
 
 			if (should_invoke_event_on_last_frame &&

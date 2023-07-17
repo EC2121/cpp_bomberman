@@ -18,7 +18,8 @@ namespace Physics {
 		auto condition = [id](std::weak_ptr<Collider> ref) {
 			return (ref.lock()->GetId() == id || ref.expired());
 		};
-		PhysicsMgr::colliders_in_scene.erase(std::remove_if(PhysicsMgr::colliders_in_scene.begin(), PhysicsMgr::colliders_in_scene.end() - 1, condition));
+		PhysicsMgr::colliders_in_scene.erase(std::remove_if(PhysicsMgr::colliders_in_scene.begin(),
+		                                                    PhysicsMgr::colliders_in_scene.end() - 1, condition));
 		/*auto partition = std::stable_partition(PhysicsMgr::colliders_in_scene.begin(), PhysicsMgr::colliders_in_scene.end(),
 			[&](const auto& x) { return !condition(x); });
 		GC::GarbageCollector::colliders_to_destroy.insert(GC::GarbageCollector::colliders_to_destroy.end(), std::make_move_iterator(partition),
