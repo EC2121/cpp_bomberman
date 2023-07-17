@@ -81,7 +81,7 @@ For example you can customize the controls of the player changing the values of 
 ```
 
 ## Acknowledgments
-The game engine was developed as a learning project and heavily inspired by the original Bomberman game. Special thanks to the [SDL2](https://www.libsdl.org/) team for their excellent librerie.
+The game engine was developed as a learning project and heavily inspired by the original Bomberman game. Special thanks to the [SDL2](https://www.libsdl.org/) team for their excellent library.
 
 ## Contributing
 Contributions are welcome! I'm always open to constructive criticism. If you have any suggestions, bug reports, or enhancements, please open an issue or submit a pull request.
